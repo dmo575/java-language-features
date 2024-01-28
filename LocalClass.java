@@ -34,7 +34,7 @@ public class LocalClass {
         System.out.println("------- Anonimous class");
         // anonimous class
         AClass anon = new AClass() {
-            // here we use it to override a uperclass' (AClass) method
+            // here we use it to override a superclass' (AClass) method
             void method() {System.out.println("anon class method");};
             // here we use it to override an implementation of superclass' (AClass) func method from the AnInterface interface
             public void func() {System.out.println("anon interface method");}
@@ -70,7 +70,7 @@ public class LocalClass {
          * 
          * Callable<T>
          * T is the return type of the method you pass in
-         * If you want to use Callable<T> with a method that has no return, you will have to explicitly return Void or use Runnable
+         * If you want to use Callable<T> with a method that has no return, you will have to explicitly return null and expect Void as T or use Runnable
          * 
          * Runnable
          * No return type
@@ -78,7 +78,8 @@ public class LocalClass {
          * If you want to also take in arguments, there are some variations of Callable and Runnable I believe that use generics but for the most complex cases you will have
          * to make your own interface.
          * 
-         * Java accepts any lambda and method reference that matches the recepients interface's signature, meaning parameters and return type.
+         * Java accepts any lambda and method reference that matches the recepients interface's signature, meaning parameters and return type. No need to worry about the actual
+         * name of the function matching the one from the interface.
          */
     }
 
