@@ -4,6 +4,10 @@
  * method reference
  * anonymous class
  * nested method reference
+ * 
+ * do:
+ * javac LocalClass.java
+ * java LocalClass
  */
 
 import java.util.concurrent.Callable;
