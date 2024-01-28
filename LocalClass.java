@@ -1,3 +1,11 @@
+/* Example of:
+ * Nested class
+ * lambda
+ * method reference
+ * anonymous class
+ * nested method reference
+ */
+
 import java.util.concurrent.Callable;
 import java.lang.Runnable;
 
