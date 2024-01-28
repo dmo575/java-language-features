@@ -38,6 +38,8 @@ interface AnInterface {
         System.out.println("default_method");
         /* Defaults methods got introduces in Java 8 to allow programmers to modify their interfaces without breaking compatability with other code that already implemented
          * the interface.
+         * 
+         * The difference between these and static methods is that default ones are instance methods while static ones are class/interface methods.
          */
     }
     static void static_method() {
