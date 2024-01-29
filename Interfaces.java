@@ -18,6 +18,11 @@ public class Interfaces {
 
         AnInterface.SubClass sub = new AnInterface.SubClass();
         System.out.println(sub.field);
+
+        // error, all interface fields are implicitly static public and final
+        //cl.public_field = "some value";
+
+        System.out.println("This is \n\t a sample text");
     }
 }
 
@@ -33,6 +38,13 @@ class AClass implements AnInterface {
 }
 
 interface AnInterface {
+
+    // all these are ALL public static final fields implicitly, contrary to what they look like
+    final String field = "first field";
+    static String static_field = "second field";
+    public String public_field = "third field";
+
+    // all methods are implicitly public
     public void public_method();
     default void default_method() {
         System.out.println("default_method");
